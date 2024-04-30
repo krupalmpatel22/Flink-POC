@@ -1,6 +1,6 @@
 # Flow Diagram
 
-![Flow Diagram](https://drive.google.com/file/d/1QjVeivnsq_UmdI_hgPRd-6TBvOzyr6KE/view?usp=sharing)
+![Flow Diagram](https://drive.google.com/file/d/1QjVeivnsq_UmdI_hgPRd-6TBvOzyr6KE/view)
 
 ## Module Description
 
