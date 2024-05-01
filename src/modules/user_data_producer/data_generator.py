@@ -1,5 +1,6 @@
 from faker import Faker
 import uuid
+import json
 
 class DataGenerator:
     def __init__(self):
@@ -17,15 +18,15 @@ class DataGenerator:
             'state': self.fake.state(),
             'country': self.fake.country(),
             'zip_code': self.fake.zipcode(),
-            'date_of_birth': self.fake.date_of_birth(minimum_age=18, maximum_age=90),  # Assuming random date of birth between 18 and 90 years old
+            'date_of_birth': self.fake.date_of_birth(minimum_age=18, maximum_age=90).isoformat(),  # Assuming random date of birth between 18 and 90 years old
             'gender': self.fake.random_element(elements=('Male', 'Female', 'Other')),
             'occupation': self.fake.job(),
             'company_name': self.fake.company(),
             'website': self.fake.url(),
             'account_balance': self.fake.random_number(digits=5) + self.fake.random_number(digits=2) / 100,  # Assuming random decimal account balance
             'credit_score': self.fake.random_int(min=300, max=850),  # Assuming random credit score
-            'registration_date': self.fake.date_this_year(before_today=True, after_today=False),  # Assuming random registration date within this year
-            'last_login': self.fake.date_time_this_month(before_now=True, after_now=False),  # Assuming random last login date within this month
+            'registration_date': self.fake.date_this_year(before_today=True, after_today=False).isoformat(),  # Assuming random registration date within this year
+            'last_login': self.fake.date_time_this_month(before_now=True, after_now=False).isoformat(),  # Assuming random last login date within this month
             'subscription_status': self.fake.random_element(elements=('Active', 'Inactive')),
             'subscription_type': self.fake.random_element(elements=('Basic', 'Premium', 'Enterprise')),
             'profile_picture_url': self.fake.image_url(),
@@ -58,8 +59,23 @@ class DataGenerator:
             'pet_type': self.fake.random_element(elements=('Dog', 'Cat', 'Bird', 'Fish', 'Other')),
             'pet_age': self.fake.random_int(min=0, max=20),  # Assuming random age of pet between 0 and 20 years
         }
-    
-if __name__ == '__main__':
+
+def generate_data():
     data_generator = DataGenerator()
     data = data_generator.generate()
     print(data)
+
+def generate_data_file():
+    data_generator = DataGenerator()
+    json_list = []
+    for i in range(20):
+        data = data_generator.generate()
+        json_list.append(data)
+    file_path = 'data.json'
+    with open(file_path, 'w') as json_file:
+        json.dump(json_list, json_file)
+    print(data)
+
+if __name__ == '__main__':
+    #generate_data_file()
+    generate_data()
