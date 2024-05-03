@@ -1,4 +1,4 @@
-import schedule # type: ignore
+import schedule
 import time 
 from data_generator import DataGenerator
 from kafka import KafkaProducer
