@@ -14,3 +14,23 @@ services:
     environment:
       KAFKA_ADVERTISED_HOST_NAME: localhost
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+
+  jobmanager:
+    image: flink:1.13.0
+    expose:
+      - "6123"
+    ports:
+      - "8081:8081" # Flink Web UI
+    command: jobmanager
+
+  taskmanager:
+    image: flink:1.13.0
+    expose:
+      - "6121"
+      - "6122"
+    depends_on:
+      - jobmanager
+    command: taskmanager
+
+
+
