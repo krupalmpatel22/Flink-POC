@@ -2,27 +2,22 @@ from pyflink.common import WatermarkStrategy
 from pyflink.datastream import StreamExecutionEnvironment
 from pyflink.common.serialization import SimpleStringSchema
 from pyflink.datastream.connectors.kafka import KafkaSource, KafkaOffsetsInitializer
-from pymongo import MongoClient
-
+from src.utils.mongo_utils import MongoUtils
 import json
+
 
 # Function to transform a string record to a JSON dictionary
 def string_to_json(record):
     return json.loads(record)
 
-# Function to store records in bulk to MongoDB
-
 def insert_to_mongo(records):
-    client = MongoClient('mongodb+srv://shrutilthoria50:iQh9DkjSCq7FTRZX@cluster0.uvn3bbk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
-    db = client['IBM_Project']  # Replace 'your_database' with your database name
-    collection = db['flinkPOC']  # Replace 'your_collection' with your collection name
-
-    # Perform a bulk insert operation
+    collection = MongoUtils.mongo_conection('IBM_Project', 'flinkPOC')
     try:
-        collection.insert_one(records)
+        MongoUtils.insert_data(collection, records)
         print("Bulk data inserted successfully")
     except Exception as e:
         print("Error inserting bulk data:", e)
+
 
 def main():
     env = StreamExecutionEnvironment.get_execution_environment()
@@ -53,11 +48,11 @@ def main():
 
     # Store records in bulk to MongoDB
     dict_stream.map(insert_to_mongo)
-
     try:
         env.execute("Test Kafka Integration")
     except Exception as e:
         print("Job failed:", e)
+
 
 if __name__ == "__main__":
     main()
