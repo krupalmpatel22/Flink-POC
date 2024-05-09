@@ -13,10 +13,10 @@ class MongoUtils:
             collection = db[collection_name]  # Replace 'your_collection' with your collection name
             return collection
         except Exception as e:
-            print('Mongo Connection Error : ',e)
+            print('Mongo Connection Error : ', e)
 
     def insert_data(self, collection, records):
-        try :
+        try:
             collection.insert_one(records)
         except Exception as e:
-            print('Inser Data Error : ',e)
+            print('Inser Data Error : ', e)

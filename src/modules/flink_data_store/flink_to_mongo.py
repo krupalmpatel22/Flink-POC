@@ -1,12 +1,13 @@
+import os
+import re
+import json
+import logging
+from utils.mongo_utils import MongoUtils
 from pyflink.common import WatermarkStrategy
 from pyflink.datastream import StreamExecutionEnvironment
 from pyflink.common.serialization import SimpleStringSchema
 from pyflink.datastream.connectors.kafka import KafkaSource, KafkaOffsetsInitializer
-from utils.mongo_utils import MongoUtils
-import json
-import re
-import logging
-import os
+
 class FlinkToMongo:
     def __init__(self):
         self.mongo_utils=MongoUtils()
@@ -78,9 +79,9 @@ class FlinkToMongo:
         enriched_dict_stream = dict_stream.map(self.enrich_data)
         # Store records in bulk to MongoDB
         enriched_dict_stream.map(self.insert_to_mongo)
+
         try:
             env.execute("Test Kafka Integration")
-
         except Exception as e:
             print("Job failed:", e)
 
