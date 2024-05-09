@@ -6,7 +6,7 @@ class MongoUtils:
     def __init__(self):
         pass
 
-    def mongo_conection(self, db_name, collection_name):
+    def mongo_connection(self, db_name, collection_name):
         try:
             client = MongoClient(os.getenv('MONGO_URL'))
             db = client[db_name]  # Replace 'your_database' with your database name
