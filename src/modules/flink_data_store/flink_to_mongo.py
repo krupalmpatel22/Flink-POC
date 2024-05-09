@@ -8,16 +8,17 @@ from pyflink.datastream import StreamExecutionEnvironment
 from pyflink.common.serialization import SimpleStringSchema
 from pyflink.datastream.connectors.kafka import KafkaSource, KafkaOffsetsInitializer
 
+
 class FlinkToMongo:
     def __init__(self):
-        self.mongo_utils=MongoUtils()
+        self.mongo_utils = MongoUtils()
         self.logger = logging.getLogger(__name__)
         self.setup_logging()
 
     def setup_logging(self):
         logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-    def string_to_json(self,record):
+    def string_to_json(self, record):
         try:
             return json.loads(record)
         except json.JSONDecodeError:
@@ -25,7 +26,7 @@ class FlinkToMongo:
             print("Failed to parse JSON record: %s", record)
             return None
 
-    def enrich_data(self,data):
+    def enrich_data(self, data):
         for key, value in data.items():
             if value == "":
                 data[key] = None
@@ -36,7 +37,7 @@ class FlinkToMongo:
 
         return data
 
-    def insert_to_mongo(self,records):
+    def insert_to_mongo(self, records):
         try:
             collection = self.mongo_utils.mongo_connection(db_name='IBM_Project', collection_name='flinkPOC')
             self.mongo_utils.insert_data(collection, records)
