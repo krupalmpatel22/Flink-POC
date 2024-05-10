@@ -1,0 +1,25 @@
+[
+  {
+    "PropertyGroupId": "kinesis.analytics.flink.run.options",
+    "PropertyMap": {
+      "python": "TestDemo/getting-started.py",
+      "jarfile": "TestDemo/lib/flink-connector-kafka_2.11-1.14.6.jar"
+    }
+  },
+  {
+    "PropertyGroupId": "consumer.config.0",
+    "PropertyMap": {
+      "input.stream.name": "input-kafka-topic",
+      "flink.stream.initpos": "LATEST",
+      "aws.region": "us-east-1"
+    }
+  },
+  {
+    "PropertyGroupId": "producer.config.0",
+    "PropertyMap": {
+      "output.stream.name": "output-kafka-topic",
+      "shard.count": "1",
+      "aws.region": "us-east-1"
+    }
+  }
+]
