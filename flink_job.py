@@ -1,16 +1,14 @@
 import os
 from pyflink.datastream import StreamExecutionEnvironment
 from pyflink.table import StreamTableEnvironment, EnvironmentSettings
-
+from Config.api_config import config
+import sys
 
 def main():
     # Create streaming environment
     env = StreamExecutionEnvironment.get_execution_environment()
-
-    settings = EnvironmentSettings.new_instance()\
-                      .in_streaming_mode()\
-                      .use_blink_planner()\
-                      .build()
+    print("Environment created successfully.")
+    settings = EnvironmentSettings.new_instance().in_streaming_mode().build()
 
     # create table environment
     tbl_env = StreamTableEnvironment.create(stream_execution_environment=env,
@@ -18,8 +16,8 @@ def main():
 
     # add kafka connector dependency
     kafka_jar = os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                            'flink-sql-connector-kafka_2.11-1.13.0.jar')
-
+                            r'resource\flink-sql-connector-kafka_2.13-1.19.0.jar')
+    print(f"Kafka connector jar path: {kafka_jar}")
     tbl_env.get_config()\
             .get_configuration()\
             .set_string("pipeline.jars", "file://{}".format(kafka_jar))
@@ -27,20 +25,27 @@ def main():
     #######################################################################
     # Create Kafka Source Table with DDL
     #######################################################################
-    src_ddl = """
-        CREATE TABLE sales_usd (
-            seller_id VARCHAR,
-            amount_usd DOUBLE,
-            sale_ts BIGINT,
-            proctime AS PROCTIME()
-        ) WITH (
-            'connector' = 'kafka',
-            'topic' = 'sales-usd',
-            'properties.bootstrap.servers' = 'localhost:9092',
-            'properties.group.id' = 'sales-usd',
-            'format' = 'json'
-        )
+    src_ddl = f"""
+    CREATE TABLE sales_usd (
+        seller_id STRING,
+        amount_usd DOUBLE,
+        sale_ts TIMESTAMP
+    )
+    WITH (
+        'connector' = 'kafka',
+        'topic' = '{config.get('INPUT_TOPIC')}',
+        'properties.bootstrap.servers' = '{config.get('BOOTSTRAP_SERVER')}',
+        'format' = 'json',
+        'properties.group.id' = 'demoGroup',
+        'scan.startup.mode' = 'earliest-offset',
+        'properties.security.protocol' = 'SASL_SSL',
+        'properties.sasl.mechanism' = 'PLAIN',
+        'properties.sasl.jaas.config' = 'org.apache.kafka.common.security.plain.PlainLoginModule required username={config.get('API_KEY')} password={config.get('API_SECRET')};',
+        'sink.partitioner' = 'fixed'
+    )
     """
+
+    print(src_ddl)
 
     tbl_env.execute_sql(src_ddl)
 
@@ -56,30 +61,31 @@ def main():
     sql = """
         SELECT
           seller_id,
-          TUMBLE_END(proctime, INTERVAL '60' SECONDS) AS window_end,
-          SUM(amount_usd) * 0.85 AS window_sales
+          SUM(amount_usd * 0.85) AS window_sales
         FROM sales_usd
         GROUP BY
-          TUMBLE(proctime, INTERVAL '60' SECONDS),
           seller_id
     """
+
+    print(sql)
+
     revenue_tbl = tbl_env.sql_query(sql)
 
     print('\nProcess Sink Schema')
     revenue_tbl.print_schema()
-
+    sys.exit(0)
     ###############################################################
     # Create Kafka Sink Table
     ###############################################################
-    sink_ddl = """
+    sink_ddl = f"""
         CREATE TABLE sales_euros (
             seller_id VARCHAR,
             window_end TIMESTAMP(3),
             window_sales DOUBLE
         ) WITH (
             'connector' = 'kafka',
-            'topic' = 'sales-euros',
-            'properties.bootstrap.servers' = 'localhost:9092',
+            'topic' = 'sales_euros',
+            'properties.bootstrap.servers' = {config.get('BOOTSTRAP_SERVER')},
             'format' = 'json'
         )
     """
