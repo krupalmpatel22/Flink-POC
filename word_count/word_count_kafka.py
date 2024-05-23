@@ -14,9 +14,9 @@ def word_count(kafka_brokers, kafka_topic, output_path):
 
     # Construct the path to the Kafka connector JAR file
     kafka_jar = os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                             'flink-connector-kafka_2.11-1.19.0.jar')
+                             'resource/flink-connector-kafka_2.11-1.19.0.jar')
     kafka_jar_sql = os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                             'flink-sql-connector-kafka_2.11-1.19.0.jar')
+                             'resource/flink-sql-connector-kafka_2.11-1.19.0.jar')
 
     # Set the pipeline.jars configuration option
     env.add_jars("file://{}".format(kafka_jar))
