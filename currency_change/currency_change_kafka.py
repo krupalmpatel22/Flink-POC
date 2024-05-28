@@ -35,19 +35,25 @@ SQL_QUERY = f"""
         'connector' = 'kafka',
         'topic' = '{config.get("INPUT_TOPIC")}',
         'properties.bootstrap.servers' = '{config.get("BOOTSTRAP_SERVER")}',
+        'properties.group.id' = 'demoGroup',
+        'scan.startup.mode' = 'earliest-offset',
         'properties.security.protocol' = 'SASL_SSL',
         'properties.sasl.mechanism' = 'PLAIN',
         'properties.sasl.jaas.config' = 'org.apache.kafka.common.security.plain.PlainLoginModule required username="{config.get("API_KEY")}" password="{config.get("API_SECRET")}";',
         'format' = 'json'
     );
 """
-print(SQL_QUERY)
 
-table_env.execute_sql(SQL_QUERY)
+try:
+    print(SQL_QUERY)
+    table_env.execute_sql(SQL_QUERY)
+    print("Input table created...")
+    table = table_env.from_path("currency_change_input")
+    table.print_schema()
+    print(table.to_pandas())
+except Exception as e:
+    print("An error occurred:", e)
 
-print("Input table created...")
-table = table_env.from_path("currency_change_input")
-table.print_schema()
 
 revenue = table.select(col("input_amount"), col("from_currency"), col("to_currency"), call("cc", col("input_amount"), col("from_currency"), col("to_currency")).alias("output_amount"), call("cc", 1, col("from_currency"), col("to_currency")).alias("rate"))
 print("computed completed...")
