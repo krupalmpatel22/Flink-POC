@@ -11,7 +11,7 @@ producer = KafkaProducer(
 )
 
 # Define the Kafka topic
-topic_name = 'currency_conversion'
+topic_name = 'number_topic'
 
 # Function to send messages to Kafka
 def send_message(producer, topic, message):
@@ -19,13 +19,11 @@ def send_message(producer, topic, message):
     producer.flush()
     print(f"Message sent: {message}")
 
-foo = ["INR", "USD", "CAD", "EUR", "AUD"]
 # Example messages to send
-for i in range(100):
+for i in range(10):
     message = {
-        "input_amount": random.randint(1, 100),
-        "from_currency": random.choice(foo),
-        "to_currency": random.choice(foo)
+        "number_1": random.randint(1, 10000),
+        "number_2": random.randint(1, 10000)
         }
 
     send_message(producer, topic_name, message)

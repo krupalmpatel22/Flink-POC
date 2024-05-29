@@ -18,7 +18,7 @@ def convert_currency(amount, from_currency, to_currency):
     return converted_amount
 
 # Create a batch TableEnvironment
-env_settings = EnvironmentSettings.in_batch_mode()
+env_settings = EnvironmentSettings.in_streaming_mode()
 table_env = TableEnvironment.create(env_settings)
 
 print("Table Environment created...")
