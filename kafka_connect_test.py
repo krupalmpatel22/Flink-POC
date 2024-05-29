@@ -10,12 +10,13 @@ def convert_currency(amount, from_currency, to_currency):
     from currency_converter import CurrencyConverter
     c = CurrencyConverter()
     converted_amount = c.convert(amount, from_currency, to_currency)
-    # Ensure the returned value is an integer
+    # converted_amount = amount * 2
     return converted_amount
 
 
 # create a streaming TableEnvironment from a StreamExecutionEnvironment
 env = StreamExecutionEnvironment.get_execution_environment()
+env.set_parallelism(1)
 table_env = StreamTableEnvironment.create(env)
 
 table_env.get_config().set("pipeline.jars", "file:///C:/Users/krupa/Downloads/flink-sql-connector-kafka-3.1.0-1.18.jar")
@@ -59,7 +60,8 @@ revenue = table.select(
     col("input_amount"), 
     col("from_currency"), 
     col("to_currency"),
-    call("cc", col("input_amount"), col("from_currency"), col("to_currency")).alias("output_amount")
+    call("cc", col("input_amount"), col("from_currency"), col("to_currency")).alias("output_amount"),
+    call("cc", 1, col("from_currency"), col("to_currency")).alias("rate")
 )
 
 revenue.print_schema()
