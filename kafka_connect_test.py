@@ -4,11 +4,11 @@ from pyflink.table.expressions import call, col
 from pyflink.table.udf import ScalarFunction, udf
 from pyflink.table.types import DataTypes
 from currency_converter import CurrencyConverter
-
+from currency_converter import CurrencyConverter
+  
+c = CurrencyConverter()
 @udf(result_type=DataTypes.DOUBLE()) 
-def convert_currency(amount, from_currency, to_currency):
-    from currency_converter import CurrencyConverter
-    c = CurrencyConverter()
+def convert_currency(amount, from_currency, to_currency):    
     converted_amount = c.convert(amount, from_currency, to_currency)
     # converted_amount = amount * 2
     return converted_amount
