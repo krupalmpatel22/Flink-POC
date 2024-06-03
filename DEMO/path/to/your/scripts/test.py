@@ -2,6 +2,23 @@ from pyflink.datastream import StreamExecutionEnvironment
 from pyflink.table import StreamTableEnvironment
 from pyflink.table.expressions import call, col
 import os
+from kafka import KafkaProducer, KafkaConsumer
+
+
+def test_consumer():
+    print("Testing Kafka consumer...")
+    # Create a Kafka consumer
+    consumer = KafkaConsumer('number_topic', bootstrap_servers='kafka:9092', auto_offset_reset='earliest')
+    print("Kafka consumer created successfully", consumer.bootstrap_connected())
+    # Read a test message
+    for message in consumer:
+        print(f"Received message: {message.value.decode('utf-8')}")
+        break  # Only read one message for testing purposes
+
+    # Close the consumer
+    consumer.close()
+    print("Kafka consumer closed successfully")
+
 # from pyflink.table.udf import ScalarFunction, udf
 # from pyflink.table.types import DataTypes
 # from currency_converter import CurrencyConverter
@@ -24,6 +41,7 @@ import os
 #     return num1 + num2
 
 # create a streaming TableEnvironment from a StreamExecutionEnvironment
+test_consumer()
 env = StreamExecutionEnvironment.get_execution_environment()
 env.set_parallelism(1)
 table_env = StreamTableEnvironment.create(env)
@@ -60,7 +78,7 @@ CREATE TABLE KafkaTable (
 ) WITH (
   'connector' = 'kafka',
   'topic' = 'number_topic',
-  'properties.bootstrap.servers' = 'localhost:9092',
+  'properties.bootstrap.servers' = 'kafka:9092',
   'properties.group.id' = 'testGroup',
   'scan.startup.mode' = 'earliest-offset',
   'format' = 'json'

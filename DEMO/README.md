@@ -1,4 +1,4 @@
-./bin/flink run --python scripts/test.py
+./bin/flink run --python scripts/new.py
 ./bin/flink run --python scripts/currency_change.py
 ./bin/flink run --python scripts/test.py
 ./bin/flink run --python scripts/test2.py
