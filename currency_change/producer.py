@@ -11,7 +11,7 @@ producer = KafkaProducer(
 )
 
 # Define the Kafka topic
-topic_name = 'currency_conversion'
+topic_name = 'test'
 
 # Function to send messages to Kafka
 def send_message(producer, topic, message):

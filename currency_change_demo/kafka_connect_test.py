@@ -35,8 +35,8 @@ CREATE TABLE KafkaTable (
   `to_currency` STRING
 ) WITH (
   'connector' = 'kafka',
-  'topic' = 'test_topic',
-  'properties.bootstrap.servers' = '192.168.29.89:9092',
+  'topic' = 'test',
+  'properties.bootstrap.servers' = 'localhost:9092',
   'properties.group.id' = 'testGroup',
   'scan.startup.mode' = 'earliest-offset',
   'format' = 'json'
