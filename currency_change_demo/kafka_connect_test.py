@@ -35,8 +35,8 @@ CREATE TABLE KafkaTable (
   `to_currency` STRING
 ) WITH (
   'connector' = 'kafka',
-  'topic' = 'currency_conversion',
-  'properties.bootstrap.servers' = 'localhost:9092',
+  'topic' = 'test_topic',
+  'properties.bootstrap.servers' = '192.168.29.89:9092',
   'properties.group.id' = 'testGroup',
   'scan.startup.mode' = 'earliest-offset',
   'format' = 'json'
@@ -64,29 +64,27 @@ revenue = table.select(
 )
 
 revenue.print_schema()
-# revenue.execute().print()
+revenue.execute().print()
 
 
+# KAFKA_SINK= """
+# CREATE TABLE sink (
+#   `input_amount` BIGINT,
+#   `from_currency` STRING,
+#   `to_currency` STRING,
+#   `output_amount` DOUBLE,
+#   `rate` DOUBLE
+# ) WITH (
+#   'connector' = 'kafka',
+#   'topic' = 'currency_conversion_output',
+#   'properties.bootstrap.servers' = 'localhost:9092',
+#   'properties.group.id' = 'testGroup',
+#   'scan.startup.mode' = 'earliest-offset',
+#   'format' = 'json'
+# )
+# """
 
+# table_env.execute_sql(KAFKA_SINK)
+# print("Kafka sink table created successfully")
 
-KAFKA_SINK= """
-CREATE TABLE sink (
-  `input_amount` BIGINT,
-  `from_currency` STRING,
-  `to_currency` STRING,
-  `output_amount` DOUBLE,
-  `rate` DOUBLE
-) WITH (
-  'connector' = 'kafka',
-  'topic' = 'currency_conversion_output',
-  'properties.bootstrap.servers' = 'localhost:9092',
-  'properties.group.id' = 'testGroup',
-  'scan.startup.mode' = 'earliest-offset',
-  'format' = 'json'
-)
-"""
-
-table_env.execute_sql(KAFKA_SINK)
-print("Kafka sink table created successfully")
-
-revenue.execute_insert("sink").wait()
+# revenue.execute_insert("sink").wait()

@@ -1,0 +1,25 @@
+services:
+  jobmanager:
+    image: flink-python:3.10
+    hostname: jobmanager
+    ports:
+      - "8081:8081"
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+    volumes:
+      - ./path/to/your/scripts:/opt/flink/scripts
+    command: jobmanager
+
+  taskmanager:
+    image: flink-python:3.10
+    hostname: taskmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 2
+    volumes:
+      - ./path/to/your/scripts:/opt/flink/scripts
+    command: taskmanager

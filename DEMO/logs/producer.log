@@ -1,0 +1,936 @@
+2024-05-31 12:47:51,525 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-05-31 12:47:51,527 - INFO - Probing node bootstrap-0 broker version
+2024-05-31 12:47:51,528 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-05-31 12:47:51,700 - INFO - Broker version identified as 2.5.0
+2024-05-31 12:47:51,700 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-05-31 12:47:51,707 - INFO - Kafka Producer initialized with bootstrap server localhost:9092 and topic input_topic
+2024-05-31 12:47:51,707 - INFO - Generated message: {'input_amount': 51, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:51,882 - INFO - <BrokerConnection node_id=1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-05-31 12:47:51,884 - INFO - <BrokerConnection node_id=1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-05-31 12:47:51,884 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2024-05-31 12:47:52,970 - INFO - Message sent: {'input_amount': 51, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:52,970 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:52,970 - INFO - Generated message: {'input_amount': 8, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:52,980 - INFO - Message sent: {'input_amount': 8, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:52,980 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:52,982 - INFO - Generated message: {'input_amount': 68, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 12:47:52,992 - INFO - Message sent: {'input_amount': 68, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 12:47:52,992 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:52,992 - INFO - Generated message: {'input_amount': 13, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,005 - INFO - Message sent: {'input_amount': 13, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,005 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,005 - INFO - Generated message: {'input_amount': 12, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,022 - INFO - Message sent: {'input_amount': 12, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,022 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,022 - INFO - Generated message: {'input_amount': 3, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,029 - INFO - Message sent: {'input_amount': 3, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,031 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,031 - INFO - Generated message: {'input_amount': 17, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,084 - INFO - Message sent: {'input_amount': 17, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,084 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,084 - INFO - Generated message: {'input_amount': 81, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,096 - INFO - Message sent: {'input_amount': 81, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,096 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,096 - INFO - Generated message: {'input_amount': 30, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,107 - INFO - Message sent: {'input_amount': 30, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,107 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,107 - INFO - Generated message: {'input_amount': 87, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,112 - INFO - Message sent: {'input_amount': 87, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,117 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,117 - INFO - Generated message: {'input_amount': 96, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,125 - INFO - Message sent: {'input_amount': 96, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,125 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,125 - INFO - Generated message: {'input_amount': 29, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,134 - INFO - Message sent: {'input_amount': 29, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,134 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,134 - INFO - Generated message: {'input_amount': 69, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,141 - INFO - Message sent: {'input_amount': 69, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,141 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,141 - INFO - Generated message: {'input_amount': 57, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,150 - INFO - Message sent: {'input_amount': 57, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,150 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,150 - INFO - Generated message: {'input_amount': 37, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,165 - INFO - Message sent: {'input_amount': 37, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,165 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,165 - INFO - Generated message: {'input_amount': 74, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,175 - INFO - Message sent: {'input_amount': 74, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,176 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,176 - INFO - Generated message: {'input_amount': 96, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,182 - INFO - Message sent: {'input_amount': 96, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,182 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,182 - INFO - Generated message: {'input_amount': 51, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,189 - INFO - Message sent: {'input_amount': 51, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,189 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,191 - INFO - Generated message: {'input_amount': 56, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,203 - INFO - Message sent: {'input_amount': 56, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,203 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,204 - INFO - Generated message: {'input_amount': 78, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,211 - INFO - Message sent: {'input_amount': 78, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,211 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,211 - INFO - Generated message: {'input_amount': 99, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,216 - INFO - Message sent: {'input_amount': 99, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,216 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,216 - INFO - Generated message: {'input_amount': 20, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,231 - INFO - Message sent: {'input_amount': 20, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,231 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,231 - INFO - Generated message: {'input_amount': 2, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,241 - INFO - Message sent: {'input_amount': 2, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,245 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,245 - INFO - Generated message: {'input_amount': 35, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,252 - INFO - Message sent: {'input_amount': 35, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,252 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,252 - INFO - Generated message: {'input_amount': 82, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,259 - INFO - Message sent: {'input_amount': 82, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,259 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,259 - INFO - Generated message: {'input_amount': 21, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,266 - INFO - Message sent: {'input_amount': 21, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,266 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,266 - INFO - Generated message: {'input_amount': 63, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,273 - INFO - Message sent: {'input_amount': 63, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,273 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,274 - INFO - Generated message: {'input_amount': 39, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,278 - INFO - Message sent: {'input_amount': 39, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,278 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,278 - INFO - Generated message: {'input_amount': 41, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,288 - INFO - Message sent: {'input_amount': 41, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,289 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,289 - INFO - Generated message: {'input_amount': 64, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,295 - INFO - Message sent: {'input_amount': 64, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,295 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,295 - INFO - Generated message: {'input_amount': 26, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,305 - INFO - Message sent: {'input_amount': 26, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,305 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,305 - INFO - Generated message: {'input_amount': 59, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,327 - INFO - Message sent: {'input_amount': 59, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,327 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,327 - INFO - Generated message: {'input_amount': 55, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,335 - INFO - Message sent: {'input_amount': 55, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,335 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,335 - INFO - Generated message: {'input_amount': 79, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,344 - INFO - Message sent: {'input_amount': 79, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,344 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,344 - INFO - Generated message: {'input_amount': 69, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,350 - INFO - Message sent: {'input_amount': 69, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,350 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,350 - INFO - Generated message: {'input_amount': 38, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,366 - INFO - Message sent: {'input_amount': 38, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,367 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,367 - INFO - Generated message: {'input_amount': 92, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,371 - INFO - Message sent: {'input_amount': 92, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,375 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,375 - INFO - Generated message: {'input_amount': 78, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,385 - INFO - Message sent: {'input_amount': 78, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,385 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,385 - INFO - Generated message: {'input_amount': 51, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,396 - INFO - Message sent: {'input_amount': 51, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,396 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,396 - INFO - Generated message: {'input_amount': 70, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,402 - INFO - Message sent: {'input_amount': 70, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,404 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,404 - INFO - Generated message: {'input_amount': 16, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,410 - INFO - Message sent: {'input_amount': 16, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,410 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,410 - INFO - Generated message: {'input_amount': 80, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,421 - INFO - Message sent: {'input_amount': 80, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,421 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,421 - INFO - Generated message: {'input_amount': 91, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,430 - INFO - Message sent: {'input_amount': 91, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,430 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,430 - INFO - Generated message: {'input_amount': 38, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,438 - INFO - Message sent: {'input_amount': 38, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,438 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,438 - INFO - Generated message: {'input_amount': 80, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,449 - INFO - Message sent: {'input_amount': 80, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,449 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,449 - INFO - Generated message: {'input_amount': 61, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,456 - INFO - Message sent: {'input_amount': 61, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,456 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,456 - INFO - Generated message: {'input_amount': 98, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,466 - INFO - Message sent: {'input_amount': 98, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,466 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,466 - INFO - Generated message: {'input_amount': 52, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,472 - INFO - Message sent: {'input_amount': 52, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,472 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,472 - INFO - Generated message: {'input_amount': 74, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,479 - INFO - Message sent: {'input_amount': 74, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,479 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,479 - INFO - Generated message: {'input_amount': 18, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,495 - INFO - Message sent: {'input_amount': 18, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,495 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,495 - INFO - Generated message: {'input_amount': 84, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,502 - INFO - Message sent: {'input_amount': 84, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,502 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,502 - INFO - Generated message: {'input_amount': 72, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,512 - INFO - Message sent: {'input_amount': 72, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,512 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,512 - INFO - Generated message: {'input_amount': 45, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,519 - INFO - Message sent: {'input_amount': 45, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,519 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,519 - INFO - Generated message: {'input_amount': 67, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,526 - INFO - Message sent: {'input_amount': 67, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,526 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,526 - INFO - Generated message: {'input_amount': 37, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,535 - INFO - Message sent: {'input_amount': 37, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,535 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,535 - INFO - Generated message: {'input_amount': 8, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,550 - INFO - Message sent: {'input_amount': 8, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,550 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,552 - INFO - Generated message: {'input_amount': 84, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,557 - INFO - Message sent: {'input_amount': 84, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,560 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,560 - INFO - Generated message: {'input_amount': 85, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,575 - INFO - Message sent: {'input_amount': 85, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,575 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,575 - INFO - Generated message: {'input_amount': 67, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,584 - INFO - Message sent: {'input_amount': 67, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,585 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,585 - INFO - Generated message: {'input_amount': 89, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,592 - INFO - Message sent: {'input_amount': 89, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,592 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,592 - INFO - Generated message: {'input_amount': 32, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,598 - INFO - Message sent: {'input_amount': 32, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,598 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,598 - INFO - Generated message: {'input_amount': 39, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,608 - INFO - Message sent: {'input_amount': 39, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,608 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,609 - INFO - Generated message: {'input_amount': 17, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,617 - INFO - Message sent: {'input_amount': 17, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,617 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,617 - INFO - Generated message: {'input_amount': 41, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,625 - INFO - Message sent: {'input_amount': 41, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,625 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,625 - INFO - Generated message: {'input_amount': 57, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,631 - INFO - Message sent: {'input_amount': 57, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,633 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,633 - INFO - Generated message: {'input_amount': 63, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,642 - INFO - Message sent: {'input_amount': 63, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,642 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,642 - INFO - Generated message: {'input_amount': 29, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,647 - INFO - Message sent: {'input_amount': 29, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,647 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,647 - INFO - Generated message: {'input_amount': 25, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,655 - INFO - Message sent: {'input_amount': 25, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,656 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,656 - INFO - Generated message: {'input_amount': 38, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,663 - INFO - Message sent: {'input_amount': 38, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,663 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,663 - INFO - Generated message: {'input_amount': 17, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,671 - INFO - Message sent: {'input_amount': 17, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,671 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,671 - INFO - Generated message: {'input_amount': 25, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,680 - INFO - Message sent: {'input_amount': 25, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,680 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,681 - INFO - Generated message: {'input_amount': 61, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,687 - INFO - Message sent: {'input_amount': 61, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,687 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,687 - INFO - Generated message: {'input_amount': 15, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,694 - INFO - Message sent: {'input_amount': 15, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,694 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,694 - INFO - Generated message: {'input_amount': 27, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,701 - INFO - Message sent: {'input_amount': 27, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,701 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,701 - INFO - Generated message: {'input_amount': 83, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,711 - INFO - Message sent: {'input_amount': 83, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,711 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,711 - INFO - Generated message: {'input_amount': 93, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,713 - INFO - Message sent: {'input_amount': 93, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,713 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,719 - INFO - Generated message: {'input_amount': 93, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,724 - INFO - Message sent: {'input_amount': 93, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,724 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,724 - INFO - Generated message: {'input_amount': 27, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,731 - INFO - Message sent: {'input_amount': 27, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,731 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,731 - INFO - Generated message: {'input_amount': 71, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,740 - INFO - Message sent: {'input_amount': 71, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,740 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,740 - INFO - Generated message: {'input_amount': 41, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,748 - INFO - Message sent: {'input_amount': 41, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,748 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,748 - INFO - Generated message: {'input_amount': 43, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,757 - INFO - Message sent: {'input_amount': 43, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,757 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,757 - INFO - Generated message: {'input_amount': 56, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,762 - INFO - Message sent: {'input_amount': 56, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,762 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,762 - INFO - Generated message: {'input_amount': 86, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,773 - INFO - Message sent: {'input_amount': 86, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,773 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,773 - INFO - Generated message: {'input_amount': 33, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,781 - INFO - Message sent: {'input_amount': 33, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,781 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,781 - INFO - Generated message: {'input_amount': 34, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,784 - INFO - Message sent: {'input_amount': 34, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,784 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,784 - INFO - Generated message: {'input_amount': 93, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,796 - INFO - Message sent: {'input_amount': 93, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 12:47:53,797 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,797 - INFO - Generated message: {'input_amount': 67, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,804 - INFO - Message sent: {'input_amount': 67, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,804 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,804 - INFO - Generated message: {'input_amount': 19, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,813 - INFO - Message sent: {'input_amount': 19, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,813 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,813 - INFO - Generated message: {'input_amount': 20, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,817 - INFO - Message sent: {'input_amount': 20, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 12:47:53,817 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,817 - INFO - Generated message: {'input_amount': 46, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,825 - INFO - Message sent: {'input_amount': 46, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,825 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,825 - INFO - Generated message: {'input_amount': 93, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,833 - INFO - Message sent: {'input_amount': 93, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,834 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,834 - INFO - Generated message: {'input_amount': 59, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,841 - INFO - Message sent: {'input_amount': 59, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 12:47:53,841 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,841 - INFO - Generated message: {'input_amount': 57, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,849 - INFO - Message sent: {'input_amount': 57, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,849 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,850 - INFO - Generated message: {'input_amount': 5, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,857 - INFO - Message sent: {'input_amount': 5, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 12:47:53,857 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,857 - INFO - Generated message: {'input_amount': 1, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,861 - INFO - Message sent: {'input_amount': 1, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 12:47:53,861 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,861 - INFO - Generated message: {'input_amount': 93, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,868 - INFO - Message sent: {'input_amount': 93, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,868 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,868 - INFO - Generated message: {'input_amount': 16, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,877 - INFO - Message sent: {'input_amount': 16, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,877 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,877 - INFO - Generated message: {'input_amount': 82, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,880 - INFO - Message sent: {'input_amount': 82, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,885 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,885 - INFO - Generated message: {'input_amount': 37, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,890 - INFO - Message sent: {'input_amount': 37, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 12:47:53,890 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,890 - INFO - Generated message: {'input_amount': 30, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,897 - INFO - Message sent: {'input_amount': 30, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 12:47:53,897 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 12:47:53,900 - INFO - Closing the Kafka producer with 4294967.0 secs timeout.
+2024-05-31 12:47:53,900 - INFO - <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2024-05-31 12:47:53,900 - INFO - Kafka Producer closed
+2024-05-31 14:17:15,887 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-05-31 14:17:15,887 - INFO - Probing node bootstrap-0 broker version
+2024-05-31 14:17:15,887 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-05-31 14:17:16,007 - INFO - Broker version identified as 2.5.0
+2024-05-31 14:17:16,009 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-05-31 14:17:16,009 - INFO - Kafka Producer initialized with bootstrap server localhost:9092 and topic input_topic
+2024-05-31 14:17:16,009 - INFO - Generated message: {'input_amount': 65, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,029 - INFO - <BrokerConnection node_id=1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-05-31 14:17:16,029 - INFO - <BrokerConnection node_id=1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-05-31 14:17:16,029 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2024-05-31 14:17:16,120 - INFO - Message sent: {'input_amount': 65, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,120 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,120 - INFO - Generated message: {'input_amount': 57, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,128 - INFO - Message sent: {'input_amount': 57, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,128 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,128 - INFO - Generated message: {'input_amount': 88, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,134 - INFO - Message sent: {'input_amount': 88, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,134 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,134 - INFO - Generated message: {'input_amount': 29, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,141 - INFO - Message sent: {'input_amount': 29, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,141 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,141 - INFO - Generated message: {'input_amount': 74, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,143 - INFO - Message sent: {'input_amount': 74, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,143 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,143 - INFO - Generated message: {'input_amount': 91, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,153 - INFO - Message sent: {'input_amount': 91, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,153 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,153 - INFO - Generated message: {'input_amount': 7, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,158 - INFO - Message sent: {'input_amount': 7, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,158 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,158 - INFO - Generated message: {'input_amount': 52, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,167 - INFO - Message sent: {'input_amount': 52, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,167 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,167 - INFO - Generated message: {'input_amount': 24, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,174 - INFO - Message sent: {'input_amount': 24, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,174 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,174 - INFO - Generated message: {'input_amount': 72, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,180 - INFO - Message sent: {'input_amount': 72, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,180 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,180 - INFO - Generated message: {'input_amount': 47, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,185 - INFO - Message sent: {'input_amount': 47, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,187 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,187 - INFO - Generated message: {'input_amount': 50, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,192 - INFO - Message sent: {'input_amount': 50, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,192 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,192 - INFO - Generated message: {'input_amount': 82, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,201 - INFO - Message sent: {'input_amount': 82, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,201 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,201 - INFO - Generated message: {'input_amount': 52, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,207 - INFO - Message sent: {'input_amount': 52, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,207 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,207 - INFO - Generated message: {'input_amount': 12, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,214 - INFO - Message sent: {'input_amount': 12, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,214 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,214 - INFO - Generated message: {'input_amount': 18, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,216 - INFO - Message sent: {'input_amount': 18, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,222 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,222 - INFO - Generated message: {'input_amount': 2, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,228 - INFO - Message sent: {'input_amount': 2, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,228 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,228 - INFO - Generated message: {'input_amount': 69, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,230 - INFO - Message sent: {'input_amount': 69, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,230 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,230 - INFO - Generated message: {'input_amount': 30, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,241 - INFO - Message sent: {'input_amount': 30, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,241 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,242 - INFO - Generated message: {'input_amount': 92, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,247 - INFO - Message sent: {'input_amount': 92, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,247 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,247 - INFO - Generated message: {'input_amount': 20, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,247 - INFO - Message sent: {'input_amount': 20, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,255 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,255 - INFO - Generated message: {'input_amount': 30, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,259 - INFO - Message sent: {'input_amount': 30, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,259 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,262 - INFO - Generated message: {'input_amount': 43, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,267 - INFO - Message sent: {'input_amount': 43, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,269 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,269 - INFO - Generated message: {'input_amount': 66, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,274 - INFO - Message sent: {'input_amount': 66, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,274 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,274 - INFO - Generated message: {'input_amount': 43, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,278 - INFO - Message sent: {'input_amount': 43, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,281 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,281 - INFO - Generated message: {'input_amount': 69, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,281 - INFO - Message sent: {'input_amount': 69, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,287 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,287 - INFO - Generated message: {'input_amount': 34, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,293 - INFO - Message sent: {'input_amount': 34, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,293 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,294 - INFO - Generated message: {'input_amount': 21, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,294 - INFO - Message sent: {'input_amount': 21, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,294 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,294 - INFO - Generated message: {'input_amount': 53, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,305 - INFO - Message sent: {'input_amount': 53, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,305 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,305 - INFO - Generated message: {'input_amount': 5, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,311 - INFO - Message sent: {'input_amount': 5, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,311 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,311 - INFO - Generated message: {'input_amount': 68, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,315 - INFO - Message sent: {'input_amount': 68, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,318 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,318 - INFO - Generated message: {'input_amount': 85, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,329 - INFO - Message sent: {'input_amount': 85, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,329 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,329 - INFO - Generated message: {'input_amount': 57, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,341 - INFO - Message sent: {'input_amount': 57, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,341 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,341 - INFO - Generated message: {'input_amount': 95, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,341 - INFO - Message sent: {'input_amount': 95, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,341 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,341 - INFO - Generated message: {'input_amount': 61, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,357 - INFO - Message sent: {'input_amount': 61, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,357 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,357 - INFO - Generated message: {'input_amount': 37, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,357 - INFO - Message sent: {'input_amount': 37, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,357 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,357 - INFO - Generated message: {'input_amount': 36, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,373 - INFO - Message sent: {'input_amount': 36, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,373 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,373 - INFO - Generated message: {'input_amount': 71, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,378 - INFO - Message sent: {'input_amount': 71, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,378 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,378 - INFO - Generated message: {'input_amount': 81, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,390 - INFO - Message sent: {'input_amount': 81, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,394 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,394 - INFO - Generated message: {'input_amount': 13, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,401 - INFO - Message sent: {'input_amount': 13, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,401 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,401 - INFO - Generated message: {'input_amount': 31, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,405 - INFO - Message sent: {'input_amount': 31, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,405 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,405 - INFO - Generated message: {'input_amount': 61, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,410 - INFO - Message sent: {'input_amount': 61, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,414 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,414 - INFO - Generated message: {'input_amount': 24, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,421 - INFO - Message sent: {'input_amount': 24, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,421 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,421 - INFO - Generated message: {'input_amount': 82, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,423 - INFO - Message sent: {'input_amount': 82, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,423 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,427 - INFO - Generated message: {'input_amount': 38, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,427 - INFO - Message sent: {'input_amount': 38, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,427 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,427 - INFO - Generated message: {'input_amount': 17, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,438 - INFO - Message sent: {'input_amount': 17, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,438 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,438 - INFO - Generated message: {'input_amount': 73, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,446 - INFO - Message sent: {'input_amount': 73, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,447 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,447 - INFO - Generated message: {'input_amount': 67, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,452 - INFO - Message sent: {'input_amount': 67, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,452 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,454 - INFO - Generated message: {'input_amount': 1, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,457 - INFO - Message sent: {'input_amount': 1, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,457 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,457 - INFO - Generated message: {'input_amount': 33, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,465 - INFO - Message sent: {'input_amount': 33, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,465 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,467 - INFO - Generated message: {'input_amount': 29, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,468 - INFO - Message sent: {'input_amount': 29, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,468 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,468 - INFO - Generated message: {'input_amount': 10, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,475 - INFO - Message sent: {'input_amount': 10, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,475 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,475 - INFO - Generated message: {'input_amount': 82, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,475 - INFO - Message sent: {'input_amount': 82, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,484 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,484 - INFO - Generated message: {'input_amount': 78, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,484 - INFO - Message sent: {'input_amount': 78, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,484 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,484 - INFO - Generated message: {'input_amount': 75, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,492 - INFO - Message sent: {'input_amount': 75, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,492 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,492 - INFO - Generated message: {'input_amount': 90, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,495 - INFO - Message sent: {'input_amount': 90, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,495 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,495 - INFO - Generated message: {'input_amount': 65, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,500 - INFO - Message sent: {'input_amount': 65, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,500 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,504 - INFO - Generated message: {'input_amount': 39, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,508 - INFO - Message sent: {'input_amount': 39, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,508 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,509 - INFO - Generated message: {'input_amount': 66, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,509 - INFO - Message sent: {'input_amount': 66, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,509 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,509 - INFO - Generated message: {'input_amount': 4, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,516 - INFO - Message sent: {'input_amount': 4, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,519 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,519 - INFO - Generated message: {'input_amount': 25, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,520 - INFO - Message sent: {'input_amount': 25, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,520 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,520 - INFO - Generated message: {'input_amount': 7, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,520 - INFO - Message sent: {'input_amount': 7, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,520 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,520 - INFO - Generated message: {'input_amount': 46, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,532 - INFO - Message sent: {'input_amount': 46, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,532 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,532 - INFO - Generated message: {'input_amount': 88, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,532 - INFO - Message sent: {'input_amount': 88, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,532 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,532 - INFO - Generated message: {'input_amount': 20, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,545 - INFO - Message sent: {'input_amount': 20, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,545 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,546 - INFO - Generated message: {'input_amount': 19, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,547 - INFO - Message sent: {'input_amount': 19, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,547 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,547 - INFO - Generated message: {'input_amount': 38, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,555 - INFO - Message sent: {'input_amount': 38, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,555 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,555 - INFO - Generated message: {'input_amount': 36, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,555 - INFO - Message sent: {'input_amount': 36, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,555 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,555 - INFO - Generated message: {'input_amount': 47, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,563 - INFO - Message sent: {'input_amount': 47, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,563 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,563 - INFO - Generated message: {'input_amount': 69, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,563 - INFO - Message sent: {'input_amount': 69, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,563 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,563 - INFO - Generated message: {'input_amount': 13, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,576 - INFO - Message sent: {'input_amount': 13, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,576 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,576 - INFO - Generated message: {'input_amount': 57, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,579 - INFO - Message sent: {'input_amount': 57, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,579 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,579 - INFO - Generated message: {'input_amount': 66, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,579 - INFO - Message sent: {'input_amount': 66, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,579 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,579 - INFO - Generated message: {'input_amount': 44, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,592 - INFO - Message sent: {'input_amount': 44, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,592 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,594 - INFO - Generated message: {'input_amount': 34, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,597 - INFO - Message sent: {'input_amount': 34, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,597 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,597 - INFO - Generated message: {'input_amount': 50, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,597 - INFO - Message sent: {'input_amount': 50, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,605 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,605 - INFO - Generated message: {'input_amount': 55, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,608 - INFO - Message sent: {'input_amount': 55, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,610 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,610 - INFO - Generated message: {'input_amount': 23, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,613 - INFO - Message sent: {'input_amount': 23, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,613 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,616 - INFO - Generated message: {'input_amount': 95, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,617 - INFO - Message sent: {'input_amount': 95, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,617 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,617 - INFO - Generated message: {'input_amount': 51, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,617 - INFO - Message sent: {'input_amount': 51, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,626 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,626 - INFO - Generated message: {'input_amount': 98, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,630 - INFO - Message sent: {'input_amount': 98, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:17:16,630 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,632 - INFO - Generated message: {'input_amount': 25, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,632 - INFO - Message sent: {'input_amount': 25, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:17:16,632 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,632 - INFO - Generated message: {'input_amount': 32, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,642 - INFO - Message sent: {'input_amount': 32, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,642 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,642 - INFO - Generated message: {'input_amount': 9, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,644 - INFO - Message sent: {'input_amount': 9, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,644 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,644 - INFO - Generated message: {'input_amount': 90, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,653 - INFO - Message sent: {'input_amount': 90, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,653 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,653 - INFO - Generated message: {'input_amount': 33, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,659 - INFO - Message sent: {'input_amount': 33, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,659 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,659 - INFO - Generated message: {'input_amount': 100, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,664 - INFO - Message sent: {'input_amount': 100, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,664 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,664 - INFO - Generated message: {'input_amount': 70, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,664 - INFO - Message sent: {'input_amount': 70, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,664 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,664 - INFO - Generated message: {'input_amount': 42, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,675 - INFO - Message sent: {'input_amount': 42, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,675 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,676 - INFO - Generated message: {'input_amount': 73, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,676 - INFO - Message sent: {'input_amount': 73, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,676 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,676 - INFO - Generated message: {'input_amount': 26, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,676 - INFO - Message sent: {'input_amount': 26, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,676 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,676 - INFO - Generated message: {'input_amount': 85, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,689 - INFO - Message sent: {'input_amount': 85, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,689 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,689 - INFO - Generated message: {'input_amount': 36, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,689 - INFO - Message sent: {'input_amount': 36, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,689 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,689 - INFO - Generated message: {'input_amount': 58, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,703 - INFO - Message sent: {'input_amount': 58, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,703 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,703 - INFO - Generated message: {'input_amount': 33, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,705 - INFO - Message sent: {'input_amount': 33, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:17:16,705 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,705 - INFO - Generated message: {'input_amount': 47, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,705 - INFO - Message sent: {'input_amount': 47, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,705 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,705 - INFO - Generated message: {'input_amount': 62, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,720 - INFO - Message sent: {'input_amount': 62, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:17:16,721 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,721 - INFO - Generated message: {'input_amount': 64, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,726 - INFO - Message sent: {'input_amount': 64, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:17:16,726 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,726 - INFO - Generated message: {'input_amount': 19, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,727 - INFO - Message sent: {'input_amount': 19, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:17:16,727 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,727 - INFO - Generated message: {'input_amount': 18, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,737 - INFO - Message sent: {'input_amount': 18, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 14:17:16,737 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:17:16,737 - INFO - Closing the Kafka producer with 4294967.0 secs timeout.
+2024-05-31 14:17:16,737 - INFO - <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2024-05-31 14:17:16,738 - INFO - Kafka Producer closed
+2024-05-31 14:19:50,330 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-05-31 14:19:50,330 - INFO - Probing node bootstrap-0 broker version
+2024-05-31 14:19:50,330 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-05-31 14:19:50,438 - INFO - Broker version identified as 2.5.0
+2024-05-31 14:19:50,438 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-05-31 14:19:50,453 - INFO - Kafka Producer initialized with bootstrap server localhost:9092 and topic input_topic
+2024-05-31 14:19:50,453 - INFO - Generated message: {'input_amount': 56, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,467 - INFO - <BrokerConnection node_id=1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-05-31 14:19:50,467 - INFO - <BrokerConnection node_id=1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-05-31 14:19:50,467 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2024-05-31 14:19:50,479 - INFO - Message sent: {'input_amount': 56, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,479 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,479 - INFO - Generated message: {'input_amount': 82, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,485 - INFO - Message sent: {'input_amount': 82, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,485 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,485 - INFO - Generated message: {'input_amount': 5, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,491 - INFO - Message sent: {'input_amount': 5, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,492 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,492 - INFO - Generated message: {'input_amount': 100, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,498 - INFO - Message sent: {'input_amount': 100, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,498 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,498 - INFO - Generated message: {'input_amount': 79, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,504 - INFO - Message sent: {'input_amount': 79, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,504 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,505 - INFO - Generated message: {'input_amount': 87, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,510 - INFO - Message sent: {'input_amount': 87, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,510 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,510 - INFO - Generated message: {'input_amount': 81, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,516 - INFO - Message sent: {'input_amount': 81, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,516 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,516 - INFO - Generated message: {'input_amount': 1, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,524 - INFO - Message sent: {'input_amount': 1, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,524 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,524 - INFO - Generated message: {'input_amount': 76, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,530 - INFO - Message sent: {'input_amount': 76, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,530 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,530 - INFO - Generated message: {'input_amount': 41, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,536 - INFO - Message sent: {'input_amount': 41, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,536 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,537 - INFO - Generated message: {'input_amount': 31, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,542 - INFO - Message sent: {'input_amount': 31, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,542 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,542 - INFO - Generated message: {'input_amount': 96, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,548 - INFO - Message sent: {'input_amount': 96, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,548 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,548 - INFO - Generated message: {'input_amount': 40, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,553 - INFO - Message sent: {'input_amount': 40, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,553 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,554 - INFO - Generated message: {'input_amount': 55, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,559 - INFO - Message sent: {'input_amount': 55, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,559 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,559 - INFO - Generated message: {'input_amount': 32, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,564 - INFO - Message sent: {'input_amount': 32, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,565 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,565 - INFO - Generated message: {'input_amount': 95, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,571 - INFO - Message sent: {'input_amount': 95, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,572 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,572 - INFO - Generated message: {'input_amount': 72, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,577 - INFO - Message sent: {'input_amount': 72, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,577 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,577 - INFO - Generated message: {'input_amount': 40, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,583 - INFO - Message sent: {'input_amount': 40, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,583 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,583 - INFO - Generated message: {'input_amount': 77, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,588 - INFO - Message sent: {'input_amount': 77, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,588 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,590 - INFO - Generated message: {'input_amount': 62, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,596 - INFO - Message sent: {'input_amount': 62, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,598 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,598 - INFO - Generated message: {'input_amount': 51, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,603 - INFO - Message sent: {'input_amount': 51, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,604 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,604 - INFO - Generated message: {'input_amount': 19, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,611 - INFO - Message sent: {'input_amount': 19, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,611 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,611 - INFO - Generated message: {'input_amount': 6, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,616 - INFO - Message sent: {'input_amount': 6, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,617 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,617 - INFO - Generated message: {'input_amount': 93, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,622 - INFO - Message sent: {'input_amount': 93, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,622 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,622 - INFO - Generated message: {'input_amount': 80, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,628 - INFO - Message sent: {'input_amount': 80, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,628 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,628 - INFO - Generated message: {'input_amount': 56, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,633 - INFO - Message sent: {'input_amount': 56, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,633 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,633 - INFO - Generated message: {'input_amount': 34, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,640 - INFO - Message sent: {'input_amount': 34, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,640 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,640 - INFO - Generated message: {'input_amount': 67, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,644 - INFO - Message sent: {'input_amount': 67, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,644 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,645 - INFO - Generated message: {'input_amount': 88, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,648 - INFO - Message sent: {'input_amount': 88, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,651 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,651 - INFO - Generated message: {'input_amount': 20, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,656 - INFO - Message sent: {'input_amount': 20, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,656 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,656 - INFO - Generated message: {'input_amount': 7, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,661 - INFO - Message sent: {'input_amount': 7, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,662 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,662 - INFO - Generated message: {'input_amount': 11, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,668 - INFO - Message sent: {'input_amount': 11, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,668 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,668 - INFO - Generated message: {'input_amount': 43, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,673 - INFO - Message sent: {'input_amount': 43, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,673 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,673 - INFO - Generated message: {'input_amount': 47, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,678 - INFO - Message sent: {'input_amount': 47, 'from_currency': 'CAD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,679 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,679 - INFO - Generated message: {'input_amount': 64, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,683 - INFO - Message sent: {'input_amount': 64, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,683 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,683 - INFO - Generated message: {'input_amount': 16, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,689 - INFO - Message sent: {'input_amount': 16, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,689 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,689 - INFO - Generated message: {'input_amount': 59, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,695 - INFO - Message sent: {'input_amount': 59, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,695 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,695 - INFO - Generated message: {'input_amount': 88, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,700 - INFO - Message sent: {'input_amount': 88, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,700 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,700 - INFO - Generated message: {'input_amount': 27, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,704 - INFO - Message sent: {'input_amount': 27, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,706 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,706 - INFO - Generated message: {'input_amount': 71, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,712 - INFO - Message sent: {'input_amount': 71, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,712 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,712 - INFO - Generated message: {'input_amount': 40, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,717 - INFO - Message sent: {'input_amount': 40, 'from_currency': 'CAD', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,717 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,717 - INFO - Generated message: {'input_amount': 47, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,722 - INFO - Message sent: {'input_amount': 47, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,722 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,722 - INFO - Generated message: {'input_amount': 69, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,727 - INFO - Message sent: {'input_amount': 69, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,728 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,728 - INFO - Generated message: {'input_amount': 60, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,733 - INFO - Message sent: {'input_amount': 60, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,734 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,734 - INFO - Generated message: {'input_amount': 59, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,738 - INFO - Message sent: {'input_amount': 59, 'from_currency': 'INR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,738 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,738 - INFO - Generated message: {'input_amount': 84, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,745 - INFO - Message sent: {'input_amount': 84, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,745 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,745 - INFO - Generated message: {'input_amount': 63, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,751 - INFO - Message sent: {'input_amount': 63, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,751 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,751 - INFO - Generated message: {'input_amount': 30, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,756 - INFO - Message sent: {'input_amount': 30, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,756 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,757 - INFO - Generated message: {'input_amount': 30, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,762 - INFO - Message sent: {'input_amount': 30, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,762 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,762 - INFO - Generated message: {'input_amount': 75, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,767 - INFO - Message sent: {'input_amount': 75, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,768 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,768 - INFO - Generated message: {'input_amount': 40, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,773 - INFO - Message sent: {'input_amount': 40, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,773 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,773 - INFO - Generated message: {'input_amount': 7, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,778 - INFO - Message sent: {'input_amount': 7, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,779 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,779 - INFO - Generated message: {'input_amount': 59, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,784 - INFO - Message sent: {'input_amount': 59, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,785 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,785 - INFO - Generated message: {'input_amount': 85, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,790 - INFO - Message sent: {'input_amount': 85, 'from_currency': 'USD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,790 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,790 - INFO - Generated message: {'input_amount': 84, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,795 - INFO - Message sent: {'input_amount': 84, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,796 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,796 - INFO - Generated message: {'input_amount': 6, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,801 - INFO - Message sent: {'input_amount': 6, 'from_currency': 'INR', 'to_currency': 'INR'}
+2024-05-31 14:19:50,802 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,802 - INFO - Generated message: {'input_amount': 79, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,808 - INFO - Message sent: {'input_amount': 79, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,808 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,808 - INFO - Generated message: {'input_amount': 41, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,813 - INFO - Message sent: {'input_amount': 41, 'from_currency': 'USD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,814 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,814 - INFO - Generated message: {'input_amount': 51, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,820 - INFO - Message sent: {'input_amount': 51, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,820 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,820 - INFO - Generated message: {'input_amount': 80, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,827 - INFO - Message sent: {'input_amount': 80, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,827 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,827 - INFO - Generated message: {'input_amount': 20, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,834 - INFO - Message sent: {'input_amount': 20, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,834 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,835 - INFO - Generated message: {'input_amount': 82, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,845 - INFO - Message sent: {'input_amount': 82, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,845 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,845 - INFO - Generated message: {'input_amount': 4, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,850 - INFO - Message sent: {'input_amount': 4, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,850 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,851 - INFO - Generated message: {'input_amount': 4, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,856 - INFO - Message sent: {'input_amount': 4, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,856 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,856 - INFO - Generated message: {'input_amount': 68, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,861 - INFO - Message sent: {'input_amount': 68, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,863 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,863 - INFO - Generated message: {'input_amount': 48, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,870 - INFO - Message sent: {'input_amount': 48, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,870 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,870 - INFO - Generated message: {'input_amount': 70, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,876 - INFO - Message sent: {'input_amount': 70, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,876 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,876 - INFO - Generated message: {'input_amount': 91, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,882 - INFO - Message sent: {'input_amount': 91, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,883 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,883 - INFO - Generated message: {'input_amount': 19, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,888 - INFO - Message sent: {'input_amount': 19, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,889 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,889 - INFO - Generated message: {'input_amount': 24, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,895 - INFO - Message sent: {'input_amount': 24, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,895 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,896 - INFO - Generated message: {'input_amount': 6, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,902 - INFO - Message sent: {'input_amount': 6, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,902 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,903 - INFO - Generated message: {'input_amount': 71, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,912 - INFO - Message sent: {'input_amount': 71, 'from_currency': 'INR', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,912 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,912 - INFO - Generated message: {'input_amount': 51, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,919 - INFO - Message sent: {'input_amount': 51, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,920 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,920 - INFO - Generated message: {'input_amount': 96, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,926 - INFO - Message sent: {'input_amount': 96, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,926 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,927 - INFO - Generated message: {'input_amount': 26, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,932 - INFO - Message sent: {'input_amount': 26, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,933 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,933 - INFO - Generated message: {'input_amount': 64, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,938 - INFO - Message sent: {'input_amount': 64, 'from_currency': 'EUR', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,938 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,939 - INFO - Generated message: {'input_amount': 35, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,944 - INFO - Message sent: {'input_amount': 35, 'from_currency': 'CAD', 'to_currency': 'INR'}
+2024-05-31 14:19:50,945 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,945 - INFO - Generated message: {'input_amount': 77, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,954 - INFO - Message sent: {'input_amount': 77, 'from_currency': 'AUD', 'to_currency': 'CAD'}
+2024-05-31 14:19:50,955 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,956 - INFO - Generated message: {'input_amount': 80, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,967 - INFO - Message sent: {'input_amount': 80, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:50,968 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,968 - INFO - Generated message: {'input_amount': 34, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,978 - INFO - Message sent: {'input_amount': 34, 'from_currency': 'EUR', 'to_currency': 'USD'}
+2024-05-31 14:19:50,978 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,979 - INFO - Generated message: {'input_amount': 88, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,985 - INFO - Message sent: {'input_amount': 88, 'from_currency': 'CAD', 'to_currency': 'USD'}
+2024-05-31 14:19:50,985 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,985 - INFO - Generated message: {'input_amount': 99, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,994 - INFO - Message sent: {'input_amount': 99, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:19:50,995 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:50,995 - INFO - Generated message: {'input_amount': 58, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:19:51,001 - INFO - Message sent: {'input_amount': 58, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:19:51,001 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,002 - INFO - Generated message: {'input_amount': 38, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:19:51,011 - INFO - Message sent: {'input_amount': 38, 'from_currency': 'CAD', 'to_currency': 'EUR'}
+2024-05-31 14:19:51,012 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,012 - INFO - Generated message: {'input_amount': 87, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:19:51,018 - INFO - Message sent: {'input_amount': 87, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:19:51,019 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,019 - INFO - Generated message: {'input_amount': 63, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:51,027 - INFO - Message sent: {'input_amount': 63, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:51,027 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,027 - INFO - Generated message: {'input_amount': 15, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:51,032 - INFO - Message sent: {'input_amount': 15, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:51,033 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,033 - INFO - Generated message: {'input_amount': 39, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:51,040 - INFO - Message sent: {'input_amount': 39, 'from_currency': 'EUR', 'to_currency': 'EUR'}
+2024-05-31 14:19:51,041 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,041 - INFO - Generated message: {'input_amount': 5, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 14:19:51,045 - INFO - Message sent: {'input_amount': 5, 'from_currency': 'AUD', 'to_currency': 'AUD'}
+2024-05-31 14:19:51,045 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,046 - INFO - Generated message: {'input_amount': 65, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:51,050 - INFO - Message sent: {'input_amount': 65, 'from_currency': 'INR', 'to_currency': 'CAD'}
+2024-05-31 14:19:51,051 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,051 - INFO - Generated message: {'input_amount': 43, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:19:51,059 - INFO - Message sent: {'input_amount': 43, 'from_currency': 'USD', 'to_currency': 'INR'}
+2024-05-31 14:19:51,059 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,059 - INFO - Generated message: {'input_amount': 49, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:51,064 - INFO - Message sent: {'input_amount': 49, 'from_currency': 'AUD', 'to_currency': 'EUR'}
+2024-05-31 14:19:51,064 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,064 - INFO - Generated message: {'input_amount': 1, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:19:51,071 - INFO - Message sent: {'input_amount': 1, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:19:51,071 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,072 - INFO - Generated message: {'input_amount': 13, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:19:51,078 - INFO - Message sent: {'input_amount': 13, 'from_currency': 'USD', 'to_currency': 'AUD'}
+2024-05-31 14:19:51,078 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,078 - INFO - Generated message: {'input_amount': 87, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:51,084 - INFO - Message sent: {'input_amount': 87, 'from_currency': 'AUD', 'to_currency': 'INR'}
+2024-05-31 14:19:51,084 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,085 - INFO - Generated message: {'input_amount': 18, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:19:51,092 - INFO - Message sent: {'input_amount': 18, 'from_currency': 'AUD', 'to_currency': 'USD'}
+2024-05-31 14:19:51,092 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,092 - INFO - Generated message: {'input_amount': 12, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:51,098 - INFO - Message sent: {'input_amount': 12, 'from_currency': 'INR', 'to_currency': 'USD'}
+2024-05-31 14:19:51,098 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,098 - INFO - Generated message: {'input_amount': 42, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:19:51,103 - INFO - Message sent: {'input_amount': 42, 'from_currency': 'EUR', 'to_currency': 'CAD'}
+2024-05-31 14:19:51,104 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,104 - INFO - Generated message: {'input_amount': 60, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:19:51,110 - INFO - Message sent: {'input_amount': 60, 'from_currency': 'EUR', 'to_currency': 'INR'}
+2024-05-31 14:19:51,111 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,111 - INFO - Generated message: {'input_amount': 28, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:19:51,116 - INFO - Message sent: {'input_amount': 28, 'from_currency': 'USD', 'to_currency': 'USD'}
+2024-05-31 14:19:51,117 - INFO - Topic: input_topic, Partitions: {0}
+2024-05-31 14:19:51,117 - INFO - Closing the Kafka producer with 4294967.0 secs timeout.
+2024-05-31 14:19:51,118 - INFO - <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2024-05-31 14:19:51,121 - INFO - Kafka Producer closed
