@@ -1,0 +1,52 @@
+services:
+  jobmanager:
+    image: flink-python:3.10
+    hostname: jobmanager
+    ports:
+      - "8081:8081"
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+    volumes:
+      - ./path/to/your/scripts:/opt/flink/scripts
+    command: jobmanager
+    networks:
+      - kafka-flink-network
+
+  taskmanager:
+    image: flink-python:3.10
+    hostname: taskmanager
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 2
+    volumes:
+      - ./path/to/your/scripts:/opt/flink/scripts
+    command: taskmanager
+    networks:
+      - kafka-flink-network
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    networks:
+      - kafka-flink-network
+    
+  kafka:
+    image: wurstmeister/kafka
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    networks:
+      - kafka-flink-network
+
+networks:
+  kafka-flink-network:
+    driver: bridge
