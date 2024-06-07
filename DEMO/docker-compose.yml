@@ -1,6 +1,6 @@
 services:
   jobmanager:
-    image: flink-python:3.10
+    image: flink-python:latest
     hostname: jobmanager
     ports:
       - "8081:8081"
@@ -15,7 +15,7 @@ services:
       - kafka-flink-network
 
   taskmanager:
-    image: flink-python:3.10
+    image: flink-python:latest
     hostname: taskmanager
     environment:
       - |

@@ -1,0 +1,52 @@
+[
+    {
+        "uuid": "26fff90a-1395-4649-93a7-e72c57df0961",
+        "balance_value": 5329,
+        "timestamp": "2024-06-07T17:09:26.766881"
+    },
+    {
+        "uuid": "f8ae711f-0cf6-48d5-9bc4-ec65d913ef8d",
+        "balance_value": 6972,
+        "timestamp": "2024-06-07T17:09:26.766881"
+    },
+    {
+        "uuid": "d2a529f3-e8d8-4547-9c75-9e53eedc08b3",
+        "balance_value": 17825,
+        "timestamp": "2024-06-07T17:09:26.766881"
+    },
+    {
+        "uuid": "5a21c2f9-55d2-498a-a52b-09c83d7db653",
+        "balance_value": 53655,
+        "timestamp": "2024-06-07T17:09:26.766881"
+    },
+    {
+        "uuid": "46009c9e-7c07-49ec-97cf-03c567a92059",
+        "balance_value": 89527,
+        "timestamp": "2024-06-07T17:09:26.766881"
+    },
+    {
+        "uuid": "c1a6ea8b-3094-4e0b-a688-35316021f0b3",
+        "balance_value": 18887,
+        "timestamp": "2024-06-07T17:09:26.766881"
+    },
+    {
+        "uuid": "5a0b53b1-fbd6-41b6-9a93-99d5759e373a",
+        "balance_value": 18610,
+        "timestamp": "2024-06-07T17:09:26.766881"
+    },
+    {
+        "uuid": "2020eb8c-4862-4a03-9131-9db978e67637",
+        "balance_value": 93598,
+        "timestamp": "2024-06-07T17:09:26.767982"
+    },
+    {
+        "uuid": "463b77ca-ff1b-412e-8425-d37970ce8658",
+        "balance_value": 57423,
+        "timestamp": "2024-06-07T17:09:26.767982"
+    },
+    {
+        "uuid": "c333291e-40b4-4b90-aa32-61b1afd55908",
+        "balance_value": 88307,
+        "timestamp": "2024-06-07T17:09:26.767982"
+    }
+]

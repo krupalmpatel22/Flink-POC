@@ -31,7 +31,7 @@ table_env = StreamTableEnvironment.create(env)
 # table_env = TableEnvironment.create(env_settings)
 
 table_env.get_config().set("pipeline.jars", "file:///opt/flink/scripts/flink-sql-connector-kafka-3.1.0-1.18.jar")
-table_env.get_config().set("pipeline.classpaths", "file:///opt/flink/scripts/flink-sql-connector-kafka-3.1.0-1.18.jar")
+# table_env.get_config().set("pipeline.classpaths", "file:///opt/flink/scripts/flink-sql-connector-kafka-3.1.0-1.18.jar")
 # table_env.set_python_requirements(
 #     requirements_file_path="C:/Users/krupa/OneDrive/Desktop/Flink-POC/requirements.txt",
 #     requirements_cache_dir="C:/Users/krupa/OneDrive/Desktop/Flink-POC/.venv"

@@ -21,7 +21,7 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
 RUN python3.10 -m pip install apache-flink ruamel.yaml CurrencyConverter
 
 # Copy local scripts into the container
-COPY /path/to/your/local/scripts /opt/flink/scripts
+COPY path/to/your/scripts /opt/flink/scripts
 
 # Clean up APT when done
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
