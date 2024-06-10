@@ -1,19 +1,19 @@
-from kafka import KafkaProducer
+from kafka.producer import KafkaProducer
 import json
 from faker import Faker
 import random
-from data import get_registered_user
+
 
 faker = Faker()
 
 # Create a Kafka producer
 producer = KafkaProducer(
-    bootstrap_servers=['192.168.29.89:9092'],
+    bootstrap_servers=['localhost:9092'],
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
 # Define the Kafka topic
-topic_name = '__consumer_offsets'
+topic_name = 'quickstart'
 
 # Function to send messages to Kafka
 def send_message(producer, topic, message):

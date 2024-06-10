@@ -1,37 +1,47 @@
-from kafka import KafkaProducer
+from confluent_kafka import Producer
 import json
-from faker import Faker
 import random
+from faker import Faker
+
+# Initialize Faker for generating random data
 faker = Faker()
 
+# Kafka configuration
+kafka_config = {
+    'bootstrap.servers': 'localhost:9092',
+    'client.id': 'python-producer'
+}
+
 # Create a Kafka producer
-producer = KafkaProducer(
-    bootstrap_servers=['localhost:9092'],
-    value_serializer=lambda v: json.dumps(v).encode('utf-8')
-)
+producer = Producer(kafka_config)
 
-# Define the Kafka topic
-topic_name = 'test'
-
-# Function to send messages to Kafka
+# Function to send a message to a Kafka topic
 def send_message(producer, topic, message):
-    producer.send(topic, message)
+    producer.produce(topic, value=json.dumps(message).encode('utf-8'))
     producer.flush()
     print(f"Message sent: {message}")
 
-foo = ["INR", "USD", "CAD", "EUR", "AUD"]
-# Example messages to send
-for i in range(100):
-    message = {
-        "input_amount": random.randint(1, 100),
-        "from_currency": random.choice(foo),
-        "to_currency": random.choice(foo)
-        }
+# Function to generate random transaction data
+def generate_transaction():
+    currencies = ["INR", "USD", "CAD", "EUR", "AUD"]
+    transaction = {
+        "transaction_id": faker.uuid4(),
+        "input_amount": random.randint(1, 1000),
+        "from_currency": random.choice(currencies),
+        "to_currency": random.choice(currencies),
+        "timestamp": faker.date_time().isoformat()
+    }
+    return transaction
 
-    send_message(producer, topic_name, message)
-# Send messages to Kafka
-# for message in messages:
-#     send_message(producer, topic_name, message)
+if __name__ == '__main__':
+    # Kafka topic name
+    topic_name = 'transactions'
 
-# Close the producer
-producer.close()
+    # Generate and send 100 random transactions
+    for _ in range(100):
+        transaction = generate_transaction()
+        send_message(producer, topic_name, transaction)
+
+    # Close the producer
+    producer.flush()
+
